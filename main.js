@@ -108,19 +108,6 @@ menuClose.onclick=()=>{
   
 
 
-  // احصل على اسم الصفحة الحالية
-  var currentPage = window.location.href.split("/").pop();
- 
 
-  // حدد الرابط النشط باستناد إلى اسم الصفحة الحالية
-  var links = document.querySelectorAll(".nav-ul li a");
-  for (var i = 0; i < links.length; i++) {
-    var link = links[i];
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active-href");
-    }else{
-      link.classList.remove("active-href");
-    }
-  }
 
 
